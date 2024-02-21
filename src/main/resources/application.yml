@@ -1,0 +1,10 @@
+logging:
+  level:
+    '[com.doding]': debug
+  pattern:
+    console: '%clr(%d{MM:dd:ss} [%-5level] %c{36}.%M%L -%m%n)'
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
