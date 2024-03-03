@@ -1,3 +1,4 @@
+# default profile
 logging:
   level:
     '[com.doding]': debug
@@ -8,3 +9,26 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        - oper # oper profile
+server:
+  db:
+    ip: 192.168.0.1
+    user: admin
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        - dev # dev profile
+server:
+  db:
+    ip: 192.168.0.9
+    user: test
+logging:
+  level:
+    '[com.doding]': trace

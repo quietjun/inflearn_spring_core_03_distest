@@ -1,0 +1,8 @@
+# dev profile
+server:
+  db:
+    ip: 192.168.0.9
+    user: test
+logging:
+  level:
+    '[com.doding]': trace
